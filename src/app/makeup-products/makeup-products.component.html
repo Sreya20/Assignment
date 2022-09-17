@@ -1,0 +1,20 @@
+<div class="card mb-3 p-3 rounded shadow" *ngIf="profiles; else other_content">
+    
+    <div class="row g-0">
+        <div class="col-md-4" *ngFor="let p of profiles | slice:0:6; let i=index">
+           <img [src]="p.image_link" class="img-fluid rounded-start makeup-size" alt="...">
+        <div class="col-md-8">
+            <div class="card-body">
+                <h3><a class="card-title" routerLink='/search/{{p.name}}' routerLinkActive="router-link-active" >{{p.name}}</a> </h3>
+                <div class="d-flex justify-content-between">
+                    <small>{{ p.brand }}</small>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<ng-template #other_content>other content here...</ng-template>
+
+

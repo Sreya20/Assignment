@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Profile } from './types';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Assignment';
+
+  @Input() profile!:Profile;
+  data!:Profile;
+  sendData(data:Profile)
+  {
+    console.log(this.profile);
+  }
+
 }
+
+

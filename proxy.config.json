@@ -1,0 +1,13 @@
+{
+    "/food-receipes/*":{
+        "target": "https://www.fruityvice.com/doc/index.html#api-GET-getAll",
+        "secure": false,
+        "logLevel": "info"
+    },
+    "/":{
+        "target": "http://localhost:4200/",
+        "secure": false,
+        "logLevel": "info"
+
+    }
+}
